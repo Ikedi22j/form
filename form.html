@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <p id="demo"></p>
+    <div class="myClick">
+        <h1>Student Profile Form</h1>
+        <div class="click">
+            <form id="studentForm">
+                <label for="name">  Name: <input type="text" placeholder="Enter Your Full Name" name="name" oninput="Case()" id="inputted"></label><br>
+                <label for="email"> Email: <input type="text" placeholder="Enter Your Email" email="email" oninput="Case2()" id="insert"></label><br>
+                <label for="address">   Address: <input type="text" placeholder="Enter Your Home Address" address="address" oninput="Case3()" id="enter" ></label><br>
+                <label for="number"> Number: <input type="number" placeholder="Input Your Tel" phone number="tel" oninput="Case4()" id="put" max="11"></label><br>
+                <label for="class">  Class: <input type="text" placeholder="Enter Your Class"></label>
+            </form>
+        </div>
+         <button onclick="submitForm()">Submit</button>
+    </div>
+   <div class="output">
+    <div>
+        <h1></h1>
+        <p id="fullname"></p>
+    </div>
+    <div>
+        <p id="email"></p>
+    </div>
+    <div>
+        <p id="address"></p>
+    </div>
+    <div>
+        <p id="tel"></p>
+    </div>
+   </div> 
+   
+</body>
+<script src="form.js"></script>
+</html>
